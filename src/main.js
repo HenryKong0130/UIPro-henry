@@ -8,6 +8,7 @@ import router from './router'
 import "./styles/index.scss"
 // 引入自定义组件
 import Icon from './components/Icon/Icon.vue'
+import Button from './components/Button/Button.vue'
 
 //使用fontawesome
 /* import the fontawesome core */
@@ -24,6 +25,7 @@ const app = createApp(App)
 app.use(router)
 //注册自定义或外部组件
 app.component('Henry-Icon',Icon)
+app.component('Henry-Button',Button)
 app.component('font-awesome-icon', FontAwesomeIcon)
 
 app.mount('#app')
